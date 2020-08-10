@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { autoUpdater } = require('electron-updater');
+const log = require('electron-log');
 
 let mainWindow;
 
@@ -15,9 +16,13 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null;
   });
-  mainWindow.once('ready-to-show', () => {
+
+  // mainWindow.once('ready-to-show', () => {
+  // });
+  setTimeout(() => {
     autoUpdater.checkForUpdatesAndNotify();
-  });
+    // autoUpdater.checkForUpdates();
+  }, 3000)
 }
 
 app.on('ready', () => {

@@ -1,6 +1,6 @@
 {
   "name": "ooo-electronautoupdate",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "An auto updating example electron app",
   "main": "main.js",
   "scripts": {
@@ -15,10 +15,11 @@
     "electron-builder": "^22.8.0"
   },
   "dependencies": {
+    "electron-log": "^4.2.2",
     "electron-updater": "^4.3.4"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/PrimeTimeTran/e-AutoUpdate.git"
+    "type": "git",
+    "url": "https://github.com/PrimeTimeTran/e-AutoUpdate.git"
   }
 }
