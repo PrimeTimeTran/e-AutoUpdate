@@ -1,6 +1,6 @@
 {
   "name": "ooo-electronautoupdate",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "An auto updating example electron app",
   "main": "main.js",
   "scripts": {
